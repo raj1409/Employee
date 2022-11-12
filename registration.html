@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title >Registration Form</title>
+</head>
+<body>
+	<h1>Registation Form</h1>
+	<form id="form1" name="form1" action="RegistrationAction.php" method="post" enctype="multipart/form-data" novalidate enctype="application/x-www-form-urlencoded">
+
+		<fieldset>
+	<legend>Basic Information</legend>
+	<label for="fname">First Name:</label>
+			<input type="text" name="firstname" id="fname" placeholder="Please write your first name."required><br><br>
+
+	<label for="lname">Last Name:</label>
+			<input type="text" name="lastname" id="lname" placeholder="Please write your last name."required>
+			<br><br>
+
+	Gender <input type="radio" name="gender" id="male" value="male"required> <label for="male">Male</label>
+	<input type="radio" name="gender" id="female" value="female" required>  <label for="female">Female</label><br><br>
+
+	<label for="dob">Date of Birth </label>
+	<input type="Date" name="dob" id="dob" required><br><br>
+
+	<label for="religion">Religion </label>
+	<select name="religion" required>
+
+		<option value="muslim">Muslim</option>
+		<option value="hindu">Hindu</option>
+		<option value="cristian">Cristian</option>
+		<option value="buddha">Buddha</option>
+		
+	</select>
+	
+	<br><br>
+			
+
+</fieldset> <br>
+
+<fieldset>
+	<legend>Contact Information</legend>
+	<label for="praddress">Present Address </label>
+	<textarea name="praddress" rows="2" cols="30"required></textarea><br><br>
+
+	<label for="peaddress">Permanent Address </label>
+	<textarea id="peaddress" rows="2" cols="30"></textarea><br><br>
+
+	<label for="phoneNumber">Phone </label>
+	<input type="tel" name="phoneNumber" id="phoneNumber" placeholder="01XXXXXXXXX" ><br><br>
+
+	<label for="mail">Email </label>
+	<input type="Email" name="mail" id="mail" placeholder="abc@gmail.com" required><br><br>
+
+	<label for="web">Personal Website Link </label>
+	<input type="url" name="web" id="web"><br><br>
+
+
+	
+</fieldset><br><br>
+
+
+    
+<fieldset>
+	<legend>Login Informations</legend>
+	<br>
+	 <label for="username">Enter your Username:</label>
+    <input type="text" id="username" name="username" placeholder="Max 5 characters."required>
+<br><br>
+
+    <label for="password">Enter your Password:</label>
+    <input type="password" id="password" name="password" placeholder="*****"required>
+    <br><br>
+
+    <label for="password">Confirm your Password:</label>
+    <input type="password" id="confirmpass" name="confirmpass" placeholder="*****"required><br><br>
+	<input type="file" name="image" id="image"><br><br>
+    <br>
+
+    <br>
+
+<input type="submit" name="submit"> 
+<button>Cancel</button>    <a href="/filedemo/login.php">Already registered- Login</a>
+
+</fieldset><br>
+	</form>
+
+
+
+</body>
+</html>
